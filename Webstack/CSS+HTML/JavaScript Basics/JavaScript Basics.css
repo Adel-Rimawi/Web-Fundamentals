@@ -1,0 +1,56 @@
+.wrapper{
+    background-color: blue;
+    padding: 3px 10px 10px 10px;
+    width: 970px;
+    margin: auto;
+    
+}
+h1{    
+background-color: crimson;
+padding: 20px;
+border-radius: 10px;
+
+
+
+}
+.sidenav {
+    background-color: skyblue;
+    border-radius: 10px;
+    width: 250px;
+    height: 320px;
+    padding-top: 10px;
+    padding-left: 5px;
+
+}
+
+.main {
+  color: blanchedalmond;
+  background-color: black; 
+  width: 700px;
+  border-radius: 10px;
+
+}
+
+.bottom {
+    position: fixed;
+    color: blanchedalmond;   
+    background-color: white;  
+    border-radius: 10px;
+    bottom: 10px;
+  }
+  .container{
+    display: flex;
+    justify-content: space-around;
+
+  }
+  
+  .footer{
+    background-color: lightgray;
+
+    border-radius: 10px;
+    padding-bottom: 1px;
+   padding-top: 1px;
+
+
+
+  }

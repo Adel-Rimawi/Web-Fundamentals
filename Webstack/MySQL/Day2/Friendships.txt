@@ -1,0 +1,63 @@
+//1
+
+SELECT users.first_name, users.last_name, user2.first_name as friend,user2.last_name as friend_last_name FROM users 
+JOIN friendships ON users.id= friendships.user_id 
+LEFT JOIN users as user2 ON friendships.friend_id = user2.id
+
+
+//2
+
+
+SELECT users.first_name, users.last_name, count(user2.first_name) as count_friends FROM users 
+JOIN friendships ON users.id= friendships.user_id 
+LEFT JOIN users as user2 ON friendships.friend_id = user2.id
+GROUP BY users.id
+
+
+//3
+
+
+SELECT users.first_name, users.last_name, count(user2.first_name) as friend FROM users 
+JOIN friendships ON users.id= friendships.user_id 
+LEFT JOIN users as user2 ON friendships.friend_id = user2.id
+GROUP BY users.id
+ORDER BY users.id limit 1;
+
+
+//4
+
+
+INSERT INTO  users  ( id, first_name, last_name)
+VALUES('6', 'Kobi','Example');
+INSERT INTO  friendships  ( id, user_id, friend_id)
+VALUES('7', '6','2');
+INSERT INTO  friendships  ( id, user_id, friend_id)
+VALUES('8', '6','4');
+INSERT INTO  friendships  ( id, user_id, friend_id)
+VALUES('9', '6','5');
+
+
+
+//5
+
+
+SELECT users.first_name, users.last_name, user2.first_name as friend,user2.last_name as friend_last_name FROM users 
+JOIN friendships ON users.id= friendships.user_id 
+LEFT JOIN users as user2 ON friendships.friend_id = user2.id
+WHERE users.first_name = 'Eli'
+ORDER BY user2.first_name ASC
+
+
+//6
+
+
+DELETE FROM friendships
+WHERE id = 5
+
+
+//7
+
+
+SELECT users.first_name, users.last_name, user2.first_name as friend,user2.last_name as friend_last_name FROM users 
+JOIN friendships ON users.id= friendships.user_id 
+LEFT JOIN users as user2 ON friendships.friend_id = user2.id

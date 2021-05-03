@@ -1,0 +1,113 @@
+
+.wrapper{
+    width: 1020px;
+
+    margin: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+}
+.header h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+/*    display: inline-block;
+    width: 50%;
+    padding-left: 17px;*/
+}
+.header h2{
+    font-size: 25px;
+    vertical-align: top;
+    text-align: right;
+    
+                            
+}
+
+.main {
+
+    background: linear-gradient(#1f0f13,#6f5964);
+    padding: 20px;
+
+
+    
+}
+.aboutme{
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+.aboutmetext{
+    background:  linear-gradient(to bottom right, #fefefe, #dbcbda);
+
+}
+.aboutme img {
+width: 400px;
+border: 5px solid lightgray;
+height:250px;
+margin-right: 25px;
+
+}
+.main h2 {
+    background-image: linear-gradient(rgb(176,175,180),rgb(158,157,164),rgb(176,175,180));
+    color: rgb(255, 255, 239);
+    vertical-align: top;
+    margin: 0 0 0 0px;
+}
+ p {
+   /* width: 40%;
+    text-align: left;*/
+    margin-bottom: 15px;
+	padding-left: 10px;
+}
+.projects img{
+width: 300px;
+}
+/*.projects {
+    width: 300px;
+
+} */
+.projecteg {
+    width: 300px;
+    background: linear-gradient(to bottom right, #fefefe, #dbcbda); 
+
+    
+}
+
+
+.technologies img{
+    width: 40px;
+}
+.projects{
+
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    background-color: green;
+    color: whitesmoke;
+    font-size: 22px;
+    border-radius: 10px;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    border: black solid 2px;
+}
+.footer{
+    width: auto;
+    text-align: center;
+    font-size: 22px;
+    background-color: rgb(247, 247, 247);
+
+}
+.footer img{
+    margin-top: 5px;
+    width: 25px;
+    vertical-align: bottom;
+
+}
